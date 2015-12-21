@@ -59,12 +59,14 @@ double condPoint(sLine *sl, point *b){
 	point pa;
 	point *a;
 	a = &pa;
+	//take one point with x = 1 
 	a->x = sl->x = 1;
 	a->y = f(sl);
 
 	point pc;
 	point *c;
 	c = &pc;
+	//take another point with x = -1
 	c->x = sl->x = -1;
 	c->y = f(sl);
 
@@ -74,7 +76,7 @@ double condPoint(sLine *sl, point *b){
 
 int main(){
 
-	//Create a rect
+	//Create a straight line
 	sLine l0;
 	sLine *l;
 	l = &l0;
@@ -113,6 +115,28 @@ int main(){
 
 
  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
