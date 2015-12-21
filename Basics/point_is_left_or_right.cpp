@@ -17,9 +17,9 @@ struct sLine{
 	double b;
 };
 
-
+//return function value y = mx + b
 double f(sLine *sl){
-	return sl->m*sl->x + sl->b;
+	return  sl->y = sl->m*sl->x + sl->b;
 }
 
 // constant 'a' and 'b' different to zero
@@ -27,18 +27,19 @@ double condPoint(sLine *sl, point *b){
 	point pa;
 	point *a;
 	a = &pa;
+	//take one point with x = 1 
 	a->x = sl->x = 1;
 	a->y = f(sl);
 
 	point pc;
 	point *c;
 	c = &pc;
+	//take another point with x = -1
 	c->x = sl->x = -1;
 	c->y = f(sl);
 
-	double cond = ((a->x - b->x)*(c->y - b->y)) - ((c->x - b->x)*(a->y - b->y));
-	cout<<cond<<endl;
-	return cond;
+	double position = ((a->x - b->x)*(c->y - b->y)) - ((c->x - b->x)*(a->y - b->y));
+	return position;
 }
 
 int main(){
@@ -61,10 +62,10 @@ int main(){
 	cin>>p->x;
 	cin>>p->y;
 
-	double cond = condPoint(l,p);
+	double position = condPoint(l,p);
 
-	if(cond ==0) printf("%s\n", "the point p belongs to the line" );
-	else if(cond > 0) printf("%s\n", "point p is on the right" );
+	if(position ==0) printf("%s\n", "the point p belongs to the line" );
+	else if(position > 0) printf("%s\n", "point p is on the right" );
 		else printf("%s\n", "point p is on the left" );
 
 	return 0;
