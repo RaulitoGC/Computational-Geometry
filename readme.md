@@ -10,12 +10,13 @@ Computational geometry, as one can easily guess from the name, is the branch of 
 Contents
 ---------------
 
- - [Basics](https://github.com/RaulitoGC/Computational-Geometry/blob/master/Basics/readmeBasics.md)
+ - [Basics](https://github.com/RaulitoGC/Computational-Geometry/tree/master/Basics)
 	 -  [How to tell whether a point is to the right or left side of a line](https://github.com/RaulitoGC/Computational-Geometry/blob/master/Basics/point_is_left_or_right.cpp)
 		
 	
 
  
+
 
 
 
